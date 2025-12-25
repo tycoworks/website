@@ -255,7 +255,7 @@ export default function Home() {
               className="text-[#8b5cf6] hover:underline underline-offset-4"
             >
               blog
-            </a>
+            </a>.
           </p>
         </motion.div>
       </section>
