@@ -177,8 +177,11 @@ export default function Home() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1a1a2e] mb-20">
+          <p className="text-[#8b5cf6] font-medium tracking-wide text-sm md:text-base mb-8">
             Services
+          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1a1a2e] mb-20">
+            How we help
           </h2>
         </motion.div>
 
@@ -226,7 +229,7 @@ export default function Home() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="text-[#8b5cf6] font-medium tracking-wide text-sm mb-8">
+          <p className="text-[#8b5cf6] font-medium tracking-wide text-sm md:text-base mb-8">
             About
           </p>
 
