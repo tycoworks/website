@@ -50,25 +50,25 @@ export default function Home() {
             <div className="hidden md:flex items-center gap-8">
               <button
                 onClick={() => scrollToSection('home')}
-                className="text-[#4a4a5a] hover:text-[#8b5cf6] transition-colors"
+                className="text-[#4a4a5a] hover:text-[#7c3aed] transition-colors"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection('services')}
-                className="text-[#4a4a5a] hover:text-[#8b5cf6] transition-colors"
+                className="text-[#4a4a5a] hover:text-[#7c3aed] transition-colors"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-[#4a4a5a] hover:text-[#8b5cf6] transition-colors"
+                className="text-[#4a4a5a] hover:text-[#7c3aed] transition-colors"
               >
                 About
               </button>
               <Button
                 onClick={() => window.open('https://calendar.app.google/CJkcsNjYF7PM6sBS7', '_blank')}
-                className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-6 py-2 rounded-full"
+                className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-6 py-2 rounded-full"
               >
                 Book a call
               </Button>
@@ -97,25 +97,25 @@ export default function Home() {
               <div className="flex flex-col gap-4">
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="text-left text-[#4a4a5a] hover:text-[#8b5cf6] transition-colors py-2"
+                  className="text-left text-[#4a4a5a] hover:text-[#7c3aed] transition-colors py-2"
                 >
                   Home
                 </button>
                 <button
                   onClick={() => scrollToSection('services')}
-                  className="text-left text-[#4a4a5a] hover:text-[#8b5cf6] transition-colors py-2"
+                  className="text-left text-[#4a4a5a] hover:text-[#7c3aed] transition-colors py-2"
                 >
                   Services
                 </button>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-left text-[#4a4a5a] hover:text-[#8b5cf6] transition-colors py-2"
+                  className="text-left text-[#4a4a5a] hover:text-[#7c3aed] transition-colors py-2"
                 >
                   About
                 </button>
                 <Button
                   onClick={() => window.open('https://calendar.app.google/CJkcsNjYF7PM6sBS7', '_blank')}
-                  className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-6 py-2 rounded-full w-full"
+                  className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-6 py-2 rounded-full w-full"
                 >
                   Book a call
                 </Button>
@@ -134,7 +134,7 @@ export default function Home() {
           variants={stagger}
         >
           <motion.p
-            className="text-[#8b5cf6] font-medium tracking-wide text-sm md:text-base mb-6"
+            className="text-[#7c3aed] font-medium tracking-wide text-sm md:text-base mb-6"
             variants={fadeUp}
           >
             Product Marketing Consulting
@@ -158,7 +158,7 @@ export default function Home() {
           <motion.div variants={fadeUp}>
             <Button
               asChild
-              className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white !px-8 !py-6 text-base rounded-full group transition-all duration-300"
+              className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white !px-8 !py-6 text-base rounded-full group transition-all duration-300"
             >
               <a href="https://calendar.app.google/CJkcsNjYF7PM6sBS7" target="_blank" rel="noopener noreferrer">
                 Book a call
@@ -177,10 +177,10 @@ export default function Home() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="text-[#8b5cf6] font-medium tracking-wide text-sm md:text-base mb-8">
+          <p className="text-[#7c3aed] font-medium tracking-wide text-sm md:text-base mb-8">
             Services
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1a1a2e] mb-20">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1a1a2e] mb-12">
             How we help
           </h2>
         </motion.div>
@@ -208,7 +208,7 @@ export default function Home() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <div className="h-px w-12 bg-[#8b5cf6] mb-8 group-hover:w-20 transition-all duration-500" />
+              <div className="h-px w-12 bg-[#7c3aed] mb-8 group-hover:w-20 transition-all duration-500" />
               <h3 className="text-xl md:text-2xl font-medium text-[#1a1a2e] mb-4">
                 {service.title}
               </h3>
@@ -230,7 +230,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="text-[#8b5cf6] font-medium tracking-wide text-sm md:text-base mb-8">
+            <p className="text-[#7c3aed] font-medium tracking-wide text-sm md:text-base mb-8">
               About
             </p>
 
@@ -240,7 +240,7 @@ export default function Home() {
                 href="https://linkedin.com/in/chrismichaelanderson"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-[#8b5cf6] underline-offset-4 hover:text-[#8b5cf6] transition-colors"
+                className="underline decoration-[#7c3aed] underline-offset-4 hover:text-[#7c3aed] transition-colors"
               >
                 Chris
               </a>
@@ -253,7 +253,7 @@ export default function Home() {
                 href="https://tycoworks.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#8b5cf6] hover:underline underline-offset-4"
+                className="text-[#7c3aed] hover:underline underline-offset-4"
               >
                 blog
               </a>.
