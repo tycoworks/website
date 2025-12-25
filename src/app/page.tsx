@@ -37,12 +37,13 @@ export default function Home() {
         <div className="px-6 md:px-12 lg:px-24 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <button onClick={() => scrollToSection('home')} className="focus:outline-none">
+            <button onClick={() => scrollToSection('home')} className="focus:outline-none flex items-center gap-2">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/694d32cabe556acb5bd2a384/bbf97f5b6_tycoworkslogo.png"
+                src="/logo.png"
                 alt="tycoworks"
-                className="h-8 md:h-10 w-auto"
+                className="h-6 md:h-7 w-auto"
               />
+              <span className="text-[#1a1a2e] font-bold">tycoworks</span>
             </button>
 
             {/* Desktop Navigation */}
@@ -136,7 +137,7 @@ export default function Home() {
             className="text-[#8b5cf6] font-medium tracking-wide text-sm md:text-base mb-6"
             variants={fadeUp}
           >
-            tycoworks
+            Product Marketing Consulting
           </motion.p>
 
           <motion.h1
@@ -157,7 +158,7 @@ export default function Home() {
           <motion.div variants={fadeUp}>
             <Button
               asChild
-              className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-8 py-6 text-base rounded-full group transition-all duration-300"
+              className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white !px-8 !py-6 text-base rounded-full group transition-all duration-300"
             >
               <a href="https://calendar.app.google/CJkcsNjYF7PM6sBS7" target="_blank" rel="noopener noreferrer">
                 Book a call
@@ -229,7 +230,7 @@ export default function Home() {
             About
           </p>
 
-          <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-relaxed mb-8">
+          <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-snug mb-8">
             I'm{' '}
             <a
               href="https://linkedin.com/in/chrismichaelanderson"
