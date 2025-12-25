@@ -222,42 +222,58 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-[#1a1a2e]">
-        <motion.div
-          className="max-w-3xl"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <p className="text-[#8b5cf6] font-medium tracking-wide text-sm md:text-base mb-8">
-            About
-          </p>
+        <div className="flex flex-col md:flex-row md:items-center gap-12 md:gap-16">
+          <motion.div
+            className="max-w-3xl md:flex-1"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <p className="text-[#8b5cf6] font-medium tracking-wide text-sm md:text-base mb-8">
+              About
+            </p>
 
-          <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-snug mb-8">
-            I'm{' '}
-            <a
-              href="https://linkedin.com/in/chrismichaelanderson"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-[#8b5cf6] underline-offset-4 hover:text-[#8b5cf6] transition-colors"
-            >
-              Chris
-            </a>
-            , a product leader, founder, and engineer with 15+ years building and selling dev tools and infrastructure products.
-          </p>
+            <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-snug mb-8">
+              I'm{' '}
+              <a
+                href="https://linkedin.com/in/chrismichaelanderson"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-[#8b5cf6] underline-offset-4 hover:text-[#8b5cf6] transition-colors"
+              >
+                Chris
+              </a>
+              , a product leader, founder, and engineer with 15+ years building and selling dev tools and infrastructure products.
+            </p>
 
-          <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
-            At tycoworks, I help technical startups communicate their product and why it matters. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
-            <a
-              href="https://tycoworks.substack.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#8b5cf6] hover:underline underline-offset-4"
-            >
-              blog
-            </a>.
-          </p>
-        </motion.div>
+            <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
+              At tycoworks, I help technical startups communicate their product and why it matters. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
+              <a
+                href="https://tycoworks.substack.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#8b5cf6] hover:underline underline-offset-4"
+              >
+                blog
+              </a>.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="flex-shrink-0 md:w-80 flex justify-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+          >
+            <img
+              src="/headshot.png"
+              alt="Chris Anderson"
+              className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover"
+            />
+          </motion.div>
+        </div>
       </section>
 
       {/* Footer */}
