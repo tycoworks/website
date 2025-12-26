@@ -66,6 +66,14 @@ export default function Home() {
               >
                 About
               </button>
+              <a
+                href="https://tycoworks.substack.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#4a4a5a] hover:text-[#7c3aed] transition-colors"
+              >
+                Blog
+              </a>
               <Button
                 onClick={() => window.open('https://calendar.app.google/CJkcsNjYF7PM6sBS7', '_blank')}
                 className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-6 py-2 rounded-full"
@@ -113,6 +121,14 @@ export default function Home() {
                 >
                   About
                 </button>
+                <a
+                  href="https://tycoworks.substack.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-left text-[#4a4a5a] hover:text-[#7c3aed] transition-colors py-2"
+                >
+                  Blog
+                </a>
                 <Button
                   onClick={() => window.open('https://calendar.app.google/CJkcsNjYF7PM6sBS7', '_blank')}
                   className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-6 py-2 rounded-full w-full"
@@ -145,7 +161,7 @@ export default function Home() {
             variants={fadeUp}
           >
             Product Marketing for<br />
-            <span className="font-medium">Dev Tools and Infrastructure</span>
+            <span className="font-medium">Infrastructure</span>
           </motion.h1>
 
           <motion.p
@@ -244,7 +260,7 @@ export default function Home() {
               >
                 Chris
               </a>
-              , a product leader, founder, and engineer with 15+ years building and selling dev tools and infrastructure products.
+              , a product leader, founder, and engineer with 15+ years building and selling infrastructure in financial markets. I led product at Genesis (Series C, Insight Partners) and Broadridge, and founded a startup backed by Entrepreneur First.
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
