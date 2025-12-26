@@ -250,7 +250,7 @@ export default function Home() {
               About
             </p>
 
-            <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-snug mb-8">
+            <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-snug mb-6">
               I'm{' '}
               <a
                 href="https://linkedin.com/in/chrismichaelanderson"
@@ -260,7 +260,11 @@ export default function Home() {
               >
                 Chris
               </a>
-              , a product leader, founder, and engineer with 15+ years building and selling infrastructure in financial markets. I led product at Genesis (Series C, Insight Partners) and Broadridge, and founded a startup backed by Entrepreneur First.
+              , a product leader, founder, and engineer.
+            </p>
+
+            <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed mb-6">
+              I have 15+ years experience building and selling trading systems and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Genesis Global and Broadridge, and founded a startup backed by Entrepreneur First.
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
