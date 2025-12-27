@@ -160,8 +160,7 @@ export default function Home() {
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-[#1a1a2e] leading-[1.1] tracking-tight mb-8"
             variants={fadeUp}
           >
-            Explain your product and strategy<br />
-            <span className="font-medium">to anyone</span>
+            Explain your product and strategy <span className="font-medium">to anyone</span>
           </motion.h1>
 
           <motion.p
