@@ -153,22 +153,22 @@ export default function Home() {
             className="text-[#7c3aed] font-medium tracking-wide text-sm md:text-base mb-6"
             variants={fadeUp}
           >
-            Product Marketing Consulting
+            Product Consulting
           </motion.p>
 
           <motion.h1
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-[#1a1a2e] leading-[1.1] tracking-tight mb-8"
             variants={fadeUp}
           >
-            Product Marketing for<br />
-            <span className="font-medium">Infrastructure</span>
+            Explain your product and<br />
+            <span className="font-medium">strategy to anyone</span>
           </motion.h1>
 
           <motion.p
             className="text-lg md:text-xl text-[#4a4a5a] max-w-2xl leading-relaxed mb-12"
             variants={fadeUp}
           >
-            We help early-stage technical founders clarify their positioning, enable their sales team, and launch their products.
+            tycoworks is a product consultancy helping early-stage technical founders to build their product strategy, clarify their positioning, and sell to technical buyers.
           </motion.p>
 
           <motion.div variants={fadeUp}>
@@ -204,16 +204,16 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
           {[
             {
+              title: "Product Strategy",
+              description: "We help you define a clear product vision and build a roadmap to get there. Vision documents, roadmap decks, and quarterly updates that keep your team and your market aligned."
+            },
+            {
               title: "Positioning & Messaging",
               description: "We work with you to define what your product is, who it's for, and why it matters. We provide a single, LLM-ready document your whole team can use — for sales calls, pitch decks, and onboarding new hires."
             },
             {
-              title: "Sales Enablement",
-              description: "We create the materials your sales team needs to have better conversations. First-call decks, objection handling guides, competitive battlecards, and proof points they can actually use."
-            },
-            {
-              title: "Product Launches",
-              description: "We shape your releases into a clear, compelling story. What changed, why it matters, and how it connects to your product vision — ready for the blog post, the webinar, and the sales deck."
+              title: "Technical Sales",
+              description: "We create the deck and narrative for first calls with technical teams. Demo scripts, architecture deep-dives, and the materials that help engineers understand why your product matters."
             }
           ].map((service, index) => (
             <motion.div
@@ -264,11 +264,11 @@ export default function Home() {
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed mb-6">
-              I have 15+ years experience building and selling trading systems and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Genesis Global and Broadridge, and founded a startup backed by Entrepreneur First.
+              I have 15+ years experience building and selling enterprise software and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Genesis Global and Itiviti, developed trading systems for investment banks, and founded a startup backed by Entrepreneur First.
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
-              At tycoworks, I help technical startups communicate their product and why it matters. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
+              At tycoworks, I help technical founders explain their product and roadmap. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
               <a
                 href="https://tycoworks.substack.com"
                 target="_blank"
