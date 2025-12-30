@@ -160,14 +160,14 @@ export default function Home() {
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-[#1a1a2e] leading-[1.1] tracking-tight mb-8"
             variants={fadeUp}
           >
-            The Product Marketing Consultancy for Technical Products
+            The Product Marketing Consultancy for <span className="font-medium">Infrastructure Startups</span>
           </motion.h1>
 
           <motion.p
             className="text-lg md:text-xl text-[#4a4a5a] max-w-2xl leading-relaxed mb-12"
             variants={fadeUp}
           >
-            tycoworks helps early-stage founders to explain their product and roadmap to their teams, customers, and investors.
+            tycoworks helps scaling infrastructure startups to explain their product and roadmap to their teams, customers, and investors.
           </motion.p>
 
           <motion.div variants={fadeUp}>
