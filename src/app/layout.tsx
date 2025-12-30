@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "tycoworks - Explain your product and strategy to anyone",
-  description: "tycoworks is a product consultancy helping early-stage technical founders to build their product strategy, clarify their positioning, and sell to technical buyers.",
+  title: "tycoworks - Product Marketing for Technical Products",
+  description: "tycoworks helps early-stage founders to explain their product and roadmap to their teams, customers, and investors.",
   icons: {
     icon: "/favicon.png",
   },

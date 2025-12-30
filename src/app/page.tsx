@@ -153,21 +153,21 @@ export default function Home() {
             className="text-[#7c3aed] font-medium tracking-wide text-sm md:text-base mb-6"
             variants={fadeUp}
           >
-            Product Consulting
+            Product Marketing Consulting
           </motion.p>
 
           <motion.h1
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-[#1a1a2e] leading-[1.1] tracking-tight mb-8"
             variants={fadeUp}
           >
-            Explain your product and strategy <span className="font-medium">to anyone</span>
+            The Product Marketing Consultancy for Technical Products
           </motion.h1>
 
           <motion.p
             className="text-lg md:text-xl text-[#4a4a5a] max-w-2xl leading-relaxed mb-12"
             variants={fadeUp}
           >
-            tycoworks is a product consultancy helping early-stage technical founders to build their product strategy, clarify their positioning, and sell to technical buyers.
+            tycoworks helps early-stage founders to explain their product and roadmap to their teams, customers, and investors.
           </motion.p>
 
           <motion.div variants={fadeUp}>
@@ -211,8 +211,8 @@ export default function Home() {
               description: "We work with you to define what your product is, who it's for, and why it matters. We provide a single, LLM-ready document your whole team can use — for sales calls, pitch decks, and onboarding new hires."
             },
             {
-              title: "Technical Sales",
-              description: "We create the deck and narrative for first calls with technical teams. Demo scripts, architecture deep-dives, and the materials that help engineers understand why your product matters."
+              title: "Sales Materials",
+              description: "We build the materials your sales team needs to have better conversations. First-call decks, demo scripts, objection handling, and the assets that help prospects understand why your product matters."
             }
           ].map((service, index) => (
             <motion.div
