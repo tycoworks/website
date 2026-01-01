@@ -167,7 +167,7 @@ export default function Home() {
             className="text-lg md:text-xl text-[#4a4a5a] max-w-2xl leading-relaxed mb-12"
             variants={fadeUp}
           >
-            tycoworks helps scaling infrastructure startups to explain their product and roadmap to their teams, customers, and investors.
+            tycoworks helps infrastructure software startups to explain their product and roadmap to their teams, customers, and investors.
           </motion.p>
 
           <motion.div variants={fadeUp}>
@@ -195,12 +195,15 @@ export default function Home() {
           <p className="text-[#7c3aed] font-medium tracking-wide text-sm md:text-base mb-8">
             Services
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1a1a2e] mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1a1a2e] mb-6">
             How we help
           </h2>
+          <p className="text-lg md:text-xl text-[#6a6a7a] max-w-3xl leading-relaxed">
+            Infrastructure products like databases and streaming platforms are hard to explain to non-technical audiences. We help you communicate what you're building and where you're going in a way that lands with everyone, not just engineers.
+          </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-12 md:gap-8 lg:gap-16">
+        <div className="grid md:grid-cols-3 gap-12 md:gap-8 lg:gap-16 mt-16">
           {[
             {
               title: "Product Strategy",
@@ -208,7 +211,7 @@ export default function Home() {
             },
             {
               title: "Positioning & Messaging",
-              description: "We work with you to define what your product is, who it's for, and why it matters. We provide a single, LLM-ready document your whole team can use — for sales calls, pitch decks, and onboarding new hires."
+              description: "We work with you to define what your product is, who it's for, and why it matters. Positioning frameworks, messaging guides, and the foundational docs your team needs for sales calls, pitch decks, and onboarding."
             },
             {
               title: "Sales Materials",
@@ -263,11 +266,11 @@ export default function Home() {
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed mb-6">
-              I have 15+ years experience building and selling enterprise software and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Genesis Global and Itiviti, developed trading systems for investment banks, and founded a startup backed by Entrepreneur First.
+              I have 15+ years experience building and selling enterprise software and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Genesis Global and Itiviti, built trading systems for investment banks, and founded a startup backed by Entrepreneur First.
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
-              At tycoworks, I help technical founders explain their product and roadmap. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
+              At tycoworks, I help infrastructure startups to clearly explain their product and roadmap. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
               <a
                 href="https://tycoworks.substack.com"
                 target="_blank"
