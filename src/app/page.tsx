@@ -211,7 +211,7 @@ export default function Home() {
             },
             {
               title: "Positioning & Messaging",
-              description: "We work with you to define what your product is, who it's for, and why it matters. Positioning frameworks, messaging guides, and the foundational docs your team needs for sales calls, pitch decks, and onboarding."
+              description: "We work with you to define what your product is, who it's for, and why it matters. Positioning frameworks, messaging guides, and the foundational docs for sales calls, pitch decks, and onboarding."
             },
             {
               title: "Sales Materials",
