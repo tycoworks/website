@@ -149,18 +149,11 @@ export default function Home() {
           animate="animate"
           variants={stagger}
         >
-          <motion.p
-            className="text-[#7c3aed] font-medium tracking-wide text-sm md:text-base mb-6"
-            variants={fadeUp}
-          >
-            Product Marketing Consulting
-          </motion.p>
-
           <motion.h1
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-[#1a1a2e] leading-[1.1] tracking-tight mb-8"
             variants={fadeUp}
           >
-            The Product Marketing Consultancy for <span className="font-medium">Infrastructure Startups</span>
+            Product Marketing for <span className="font-medium">Infrastructure Startups</span>
           </motion.h1>
 
           <motion.p
