@@ -259,7 +259,7 @@ export default function Home() {
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed mb-6">
-              I have 15+ years experience building and selling enterprise software and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Genesis Global and Itiviti, built trading systems for investment banks, and founded a startup backed by Entrepreneur First.
+              I have 15+ years experience building and selling infrastructure software and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Genesis Global and Itiviti, built trading systems for investment banks, and founded a startup backed by Entrepreneur First.
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
