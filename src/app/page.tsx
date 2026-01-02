@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/Button';
+import AnimatedTerminal from '@/components/AnimatedTerminal';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -142,39 +143,46 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-[90vh] flex flex-col justify-center px-6 md:px-12 lg:px-24 py-20 pt-32">
-        <motion.div
-          className="max-w-4xl"
-          initial="initial"
-          animate="animate"
-          variants={stagger}
-        >
-          <motion.h1
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-[#1a1a2e] leading-[1.1] tracking-tight mb-8"
-            variants={fadeUp}
+      <section id="home" className="min-h-[90vh] px-6 md:px-12 lg:px-24 py-20 pt-32">
+        <div className="flex items-center gap-12 min-h-[70vh]">
+          <motion.div
+            className="max-w-2xl flex-shrink-0"
+            initial="initial"
+            animate="animate"
+            variants={stagger}
           >
-            Product Marketing for <span className="font-medium">Infrastructure Startups</span>
-          </motion.h1>
-
-          <motion.p
-            className="text-lg md:text-xl text-[#4a4a5a] max-w-2xl leading-relaxed mb-12"
-            variants={fadeUp}
-          >
-            tycoworks helps infrastructure software startups to explain their product and roadmap to their teams, customers, and investors.
-          </motion.p>
-
-          <motion.div variants={fadeUp}>
-            <Button
-              asChild
-              className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white !px-8 !py-6 text-base rounded-full group transition-all duration-300"
+            <motion.h1
+              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-[#1a1a2e] leading-[1.1] tracking-tight mb-8"
+              variants={fadeUp}
             >
-              <a href="https://calendar.app.google/CJkcsNjYF7PM6sBS7" target="_blank" rel="noopener noreferrer">
-                Book a call
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </Button>
+              Product Marketing for <span className="font-medium">Infrastructure Startups</span>
+            </motion.h1>
+
+            <motion.p
+              className="text-lg md:text-xl text-[#4a4a5a] max-w-2xl leading-relaxed mb-12"
+              variants={fadeUp}
+            >
+              tycoworks helps infrastructure software startups to explain their product and roadmap to their teams, customers, and investors.
+            </motion.p>
+
+            <motion.div variants={fadeUp}>
+              <Button
+                asChild
+                className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white !px-8 !py-6 text-base rounded-full group transition-all duration-300"
+              >
+                <a href="https://calendar.app.google/CJkcsNjYF7PM6sBS7" target="_blank" rel="noopener noreferrer">
+                  Book a call
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </Button>
+            </motion.div>
           </motion.div>
-        </motion.div>
+
+          {/* Animated Terminal - Hidden on mobile */}
+          <div className="hidden lg:flex flex-1 justify-end items-center">
+            <AnimatedTerminal />
+          </div>
+        </div>
       </section>
 
       {/* Services Section */}
