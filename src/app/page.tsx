@@ -143,8 +143,8 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-[90vh] px-6 md:px-12 lg:px-24 py-20 pt-32">
-        <div className="flex items-center gap-12 min-h-[70vh]">
+      <section id="home" className="lg:min-h-[90vh] px-6 md:px-12 lg:px-24 py-20 pt-32">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:min-h-[70vh]">
           <motion.div
             className="max-w-2xl flex-shrink-0"
             initial="initial"
