@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Menu, X } from 'lucide-react';
+import { ArrowRight, Menu, X, Compass, Target, FileText } from 'lucide-react';
 import { Button } from '@/components/Button';
 import AnimatedTerminal from '@/components/AnimatedTerminal';
 
@@ -213,14 +213,17 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-12 md:gap-8 lg:gap-16 mt-16">
           {[
             {
+              icon: Compass,
               title: "Product Strategy",
               description: "We help you define a clear product vision and build a roadmap to get there. Vision documents, roadmap decks, and quarterly updates that keep your team and your market aligned."
             },
             {
+              icon: Target,
               title: "Positioning & Messaging",
               description: "We work with you to define what your product is, who it's for, and why it matters. Positioning frameworks, messaging guides, and the foundational docs for sales calls, pitch decks, and onboarding."
             },
             {
+              icon: FileText,
               title: "Sales Materials",
               description: "We build the materials your sales team needs to have better conversations. First-call decks, demo scripts, objection handling, and the assets that help prospects understand why your product matters."
             }
@@ -234,9 +237,12 @@ export default function Home() {
               transition={{ duration: 0.6, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
               <div className="h-px w-12 bg-[#7c3aed] mb-8 group-hover:w-20 transition-all duration-500" />
-              <h3 className="text-xl md:text-2xl font-medium text-[#1a1a2e] mb-4">
-                {service.title}
-              </h3>
+              <div className="flex items-center gap-3 mb-4">
+                <service.icon className="w-6 h-6 text-[#7c3aed] flex-shrink-0" />
+                <h3 className="text-xl md:text-2xl font-medium text-[#1a1a2e]">
+                  {service.title}
+                </h3>
+              </div>
               <p className="text-[#6a6a7a] leading-relaxed">
                 {service.description}
               </p>
