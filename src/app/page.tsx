@@ -151,6 +151,12 @@ export default function Home() {
             animate="animate"
             variants={stagger}
           >
+            <motion.p
+              className="text-[#7c3aed] font-medium tracking-wide text-sm md:text-base mb-8"
+              variants={fadeUp}
+            >
+              tycoworks
+            </motion.p>
             <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-[#1a1a2e] leading-[1.1] tracking-tight mb-8"
               variants={fadeUp}
@@ -179,7 +185,7 @@ export default function Home() {
           </motion.div>
 
           {/* Animated Terminal - Hidden on mobile */}
-          <div className="hidden lg:flex flex-1 justify-end items-center">
+          <div className="hidden lg:flex flex-1 justify-center items-center">
             <AnimatedTerminal />
           </div>
         </div>
@@ -284,7 +290,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            className="flex-shrink-0 md:w-80 flex justify-center"
+            className="flex-1 flex justify-center"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
