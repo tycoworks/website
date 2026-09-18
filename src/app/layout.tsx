@@ -13,8 +13,8 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "tycoworks - Product Marketing for Infrastructure Startups",
-  description: "tycoworks helps scaling infrastructure startups to explain their product and roadmap to their teams, customers, and investors.",
+  title: "tycoworks - Sales Enablement for Technical Products",
+  description: "tycoworks helps infrastructure and developer tool companies ramp sales reps fast: a product curriculum, live training and pitch certification.",
   icons: {
     icon: "/favicon.png",
   },

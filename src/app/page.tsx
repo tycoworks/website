@@ -2,9 +2,8 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Menu, X, Compass, Target, FileText } from 'lucide-react';
+import { ArrowRight, Menu, X, BookOpen, Mic, Award } from 'lucide-react';
 import { Button } from '@/components/Button';
-import AnimatedTerminal from '@/components/AnimatedTerminal';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -161,14 +160,14 @@ export default function Home() {
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-[#1a1a2e] leading-[1.1] tracking-tight mb-8"
               variants={fadeUp}
             >
-              Product Marketing for <span className="font-medium">Infrastructure Startups</span>
+              Sales Enablement for <span className="font-medium">Technical Products</span>
             </motion.h1>
 
             <motion.p
               className="text-lg md:text-xl text-[#4a4a5a] max-w-2xl leading-relaxed mb-12"
               variants={fadeUp}
             >
-              tycoworks helps infrastructure software startups to explain their product and roadmap to their teams, customers, and investors.
+              tycoworks helps infrastructure and developer tool companies ramp sales reps fast. We give you a product curriculum, live training and pitch certification, so reps can sell with confidence.
             </motion.p>
 
             <motion.div variants={fadeUp}>
@@ -184,9 +183,13 @@ export default function Home() {
             </motion.div>
           </motion.div>
 
-          {/* Animated Terminal - Hidden on mobile */}
+          {/* Hero illustration - hidden on mobile */}
           <div className="hidden lg:flex flex-1 justify-center items-center">
-            <AnimatedTerminal />
+            <img
+              src="/hero.png"
+              alt="A sales rep explaining a systems diagram at a whiteboard to two engineers"
+              className="w-full max-w-xl h-auto"
+            />
           </div>
         </div>
       </section>
@@ -206,26 +209,26 @@ export default function Home() {
             How we help
           </h2>
           <p className="text-lg md:text-xl text-[#6a6a7a] max-w-3xl leading-relaxed">
-            Infrastructure products like databases and streaming platforms are hard to explain to non-technical audiences. We help you communicate what you're building and where you're going in a way that lands with everyone, not just engineers.
+            Databases, streaming platforms and developer tools take real technical understanding to sell. We build the curriculum and run the sessions until your reps can pitch the product, run a first call, and handle objections without an engineer in the room. Built for heads of sales and product marketing at infrastructure and dev tools companies.
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-12 md:gap-8 lg:gap-16 mt-16">
           {[
             {
-              icon: Compass,
-              title: "Product Strategy",
-              description: "We help you define a clear product vision and build a roadmap to get there. Vision documents, roadmap decks, and quarterly updates that keep your team and your market aligned."
+              icon: BookOpen,
+              title: "Product Curriculum",
+              description: "An internal wiki that explains your product in plain terms: what it is, who it's for, how it works, how to demo it, the competitors, and the objections."
             },
             {
-              icon: Target,
-              title: "Positioning & Messaging",
-              description: "We work with you to define what your product is, who it's for, and why it matters. Positioning frameworks, messaging guides, and the foundational docs for sales calls, pitch decks, and onboarding."
+              icon: Mic,
+              title: "Live Training & Mock Calls",
+              description: "Live sessions on the curriculum, then mock first calls and pitch practice with coaching, so reps are fluent before their first real call."
             },
             {
-              icon: FileText,
-              title: "Sales Materials",
-              description: "We build the materials your sales team needs to have better conversations. First-call decks, demo scripts, objection handling, and the assets that help prospects understand why your product matters."
+              icon: Award,
+              title: "Pitch Certification",
+              description: "Each rep delivers the pitch, runs the demo and handles objections in front of a panel, so you know who is ramped and ready."
             }
           ].map((service, index) => (
             <motion.div
@@ -279,11 +282,11 @@ export default function Home() {
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed mb-6">
-              I have 15+ years experience building and selling infrastructure software and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Genesis Global and Itiviti, built trading systems for investment banks, and founded a startup backed by Entrepreneur First.
+              I have 15+ years experience building and selling infrastructure software and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Materialize, Genesis Global and Itiviti, built trading systems for investment banks, and founded a startup backed by Entrepreneur First.
             </p>
 
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
-              At tycoworks, I help infrastructure startups to clearly explain their product and roadmap. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
+              At tycoworks, I help infrastructure and developer tool companies get their sales reps ramped and pitch certified. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
               <a
                 href="https://tycoworks.substack.com"
                 target="_blank"

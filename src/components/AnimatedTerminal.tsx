@@ -33,20 +33,20 @@ export default function AnimatedTerminal() {
 
   const codeLines = [
     '## Functional Description',
-    'tycoworks is a **product marketing consultancy**',
-    'that helps **infrastructure software startups**',
-    'to **explain their product and roadmap**',
-    'in slides and docs.',
+    'tycoworks is a **sales enablement consultancy**',
+    'that helps **infrastructure and dev tool companies**',
+    'to **ramp sales reps** on a technical product',
+    'with a curriculum, live training and pitch certification.',
     '',
     '## Problem Framing',
-    'Infrastructure products like databases',
-    'and streaming platforms are **hard to explain**',
-    'to non-technical audiences.',
+    'Selling a database or a dev tool means',
+    '**talking to engineers**, and that takes',
+    'real technical understanding.',
     '',
     '## Value Framing',
-    "We help you **explain what you're building**",
-    "**and where you're going** in a way that",
-    '**lands with everyone**, not just engineers.',
+    "Reps who can **pitch the product**, run a first call",
+    "and **handle objections** without an engineer",
+    'in the room.',
   ];
 
   useEffect(() => {
