@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Menu, X, BookOpen, Mic, Award } from 'lucide-react';
+import { ArrowRight, Menu, X } from 'lucide-react';
 import { Button } from '@/components/Button';
 
 const fadeUp = {
@@ -34,7 +34,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#fafafa]">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-        <div className="px-6 md:px-12 lg:px-24 py-4">
+        <div className={`px-6 md:px-12 py-4 max-w-6xl mx-auto`}>
           <div className="flex items-center justify-between">
             {/* Logo */}
             <button onClick={() => scrollToSection('home')} className="focus:outline-none flex items-center gap-2">
@@ -58,7 +58,7 @@ export default function Home() {
                 onClick={() => scrollToSection('services')}
                 className="text-[#4a4a5a] hover:text-[#7c3aed] transition-colors"
               >
-                Services
+                Who it's for
               </button>
               <button
                 onClick={() => scrollToSection('about')}
@@ -67,7 +67,7 @@ export default function Home() {
                 About
               </button>
               <a
-                href="https://tycoworks.substack.com"
+                href="https://blog.tycoworks.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#4a4a5a] hover:text-[#7c3aed] transition-colors"
@@ -113,7 +113,7 @@ export default function Home() {
                   onClick={() => scrollToSection('services')}
                   className="text-left text-[#4a4a5a] hover:text-[#7c3aed] transition-colors py-2"
                 >
-                  Services
+                  Who it's for
                 </button>
                 <button
                   onClick={() => scrollToSection('about')}
@@ -122,7 +122,7 @@ export default function Home() {
                   About
                 </button>
                 <a
-                  href="https://tycoworks.substack.com"
+                  href="https://blog.tycoworks.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-left text-[#4a4a5a] hover:text-[#7c3aed] transition-colors py-2"
@@ -142,8 +142,8 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="lg:min-h-[90vh] px-6 md:px-12 lg:px-24 py-20 pt-32">
-        <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:min-h-[70vh]">
+      <section id="home" className="lg:min-h-[90vh] px-6 md:px-12 py-20 pt-32">
+        <div className={`flex flex-col lg:flex-row lg:items-center gap-12 lg:min-h-[70vh] max-w-6xl mx-auto`}>
           <motion.div
             className="max-w-2xl flex-shrink-0"
             initial="initial"
@@ -163,12 +163,14 @@ export default function Home() {
               Sales Enablement for <span className="font-medium">Technical Products</span>
             </motion.h1>
 
-            <motion.p
-              className="text-lg md:text-xl text-[#4a4a5a] max-w-2xl leading-relaxed mb-12"
-              variants={fadeUp}
-            >
-              tycoworks helps infrastructure and developer tool companies ramp sales reps fast. We give you a product curriculum, live training and pitch certification, so reps can sell with confidence.
+            <motion.p className="text-lg md:text-xl text-[#4a4a5a] leading-relaxed mb-4" variants={fadeUp}>
+              tycoworks helps early-stage tech startups enable their sales teams on their product. We help you ramp your reps by:
             </motion.p>
+            <motion.ul className="text-lg md:text-xl text-[#4a4a5a] leading-relaxed mb-12 space-y-2 list-disc pl-6" variants={fadeUp}>
+              <li>Building a product curriculum</li>
+              <li>Running live training and mock calls</li>
+              <li>Certifying each rep on the pitch before their first call</li>
+            </motion.ul>
 
             <motion.div variants={fadeUp}>
               <Button
@@ -194,8 +196,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-white">
+      {/* Who it's for */}
+      <section id="services" className="px-6 md:px-12 py-24 md:py-32 bg-white">
+        <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -203,60 +206,35 @@ export default function Home() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
           <p className="text-[#7c3aed] font-medium tracking-wide text-sm md:text-base mb-8">
-            Services
+            Who it's for
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1a1a2e] mb-6">
-            How we help
+            Are we a good match?
           </h2>
-          <p className="text-lg md:text-xl text-[#6a6a7a] max-w-3xl leading-relaxed">
-            Databases, streaming platforms and developer tools take real technical understanding to sell. We build the curriculum and run the sessions until your reps can pitch the product, run a first call, and handle objections without an engineer in the room. Built for heads of sales and product marketing at infrastructure and dev tools companies.
+          <p className="text-lg md:text-xl text-[#6a6a7a] max-w-3xl leading-relaxed mb-8">
+            We work best with teams who are:
           </p>
+          <ul className="text-lg md:text-xl text-[#4a4a5a] max-w-3xl leading-relaxed space-y-4">
+            {[
+              "Selling a technical product: infrastructure, databases, streaming, developer tools",
+              "Selling to engineers, or to buyers who bring engineers to the call",
+              "Hiring their first reps, onboarding new hires, or otherwise scaling the sales team",
+              "Launching a product the team hasn't sold before",
+              "Trying to get the founder, or the few people who can pitch, off every sales call",
+            ].map((item) => (
+              <li key={item} className="flex gap-4">
+                <span className="mt-3 h-px w-8 bg-[#7c3aed] flex-shrink-0" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </motion.div>
-
-        <div className="grid md:grid-cols-3 gap-12 md:gap-8 lg:gap-16 mt-16">
-          {[
-            {
-              icon: BookOpen,
-              title: "Product Curriculum",
-              description: "An internal wiki that explains your product in plain terms: what it is, who it's for, how it works, how to demo it, the competitors, and the objections."
-            },
-            {
-              icon: Mic,
-              title: "Live Training & Mock Calls",
-              description: "Live sessions on the curriculum, then mock first calls and pitch practice with coaching, so reps are fluent before their first real call."
-            },
-            {
-              icon: Award,
-              title: "Pitch Certification",
-              description: "Each rep delivers the pitch, runs the demo and handles objections in front of a panel, so you know who is ramped and ready."
-            }
-          ].map((service, index) => (
-            <motion.div
-              key={service.title}
-              className="group"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <div className="h-px w-12 bg-[#7c3aed] mb-8 group-hover:w-20 transition-all duration-500" />
-              <div className="flex items-center gap-3 mb-4">
-                <service.icon className="w-6 h-6 text-[#7c3aed] flex-shrink-0" />
-                <h3 className="text-xl md:text-2xl font-medium text-[#1a1a2e]">
-                  {service.title}
-                </h3>
-              </div>
-              <p className="text-[#6a6a7a] leading-relaxed">
-                {service.description}
-              </p>
-            </motion.div>
-          ))}
-        </div>
+      </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-[#1a1a2e]">
-        <div className="flex flex-col md:flex-row md:items-center gap-12 md:gap-16">
+      <section id="about" className="px-6 md:px-12 py-24 md:py-32 bg-[#1a1a2e]">
+        <div className={`flex flex-col md:flex-row md:items-center gap-12 md:gap-16 max-w-6xl mx-auto`}>
           <motion.div
             className="max-w-3xl md:flex-1"
             initial={{ opacity: 0, y: 40 }}
@@ -281,14 +259,10 @@ export default function Home() {
               , a product leader, founder, and engineer.
             </p>
 
-            <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed mb-6">
-              I have 15+ years experience building and selling infrastructure software and developer tools in financial markets. Along the way, I've led product and product marketing at companies like Materialize, Genesis Global and Itiviti, built trading systems for investment banks, and founded a startup backed by Entrepreneur First.
-            </p>
-
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
-              At tycoworks, I help infrastructure and developer tool companies get their sales reps ramped and pitch certified. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
+              I've spent 18 years building and selling infrastructure software and developer tools at companies like Materialize, Genesis Global and Itiviti. At tycoworks, I help infrastructure and developer tool companies get their sales reps ramped and pitch certified. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
               <a
-                href="https://tycoworks.substack.com"
+                href="https://blog.tycoworks.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#7c3aed] hover:underline underline-offset-4"
@@ -296,6 +270,18 @@ export default function Home() {
                 blog
               </a>.
             </p>
+
+            <div className="mt-10">
+              <Button
+                asChild
+                className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white !px-8 !py-6 text-base rounded-full group transition-all duration-300"
+              >
+                <a href="https://calendar.app.google/CJkcsNjYF7PM6sBS7" target="_blank" rel="noopener noreferrer">
+                  Book a call
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </Button>
+            </div>
           </motion.div>
 
           <motion.div
@@ -315,8 +301,8 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="px-6 md:px-12 lg:px-24 py-12 bg-[#fafafa] border-t border-[#e5e5e5]">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+      <footer className="px-6 md:px-12 py-12 bg-[#fafafa] border-t border-[#e5e5e5]">
+        <div className={`flex flex-col md:flex-row justify-between items-center gap-4 max-w-6xl mx-auto`}>
           <p className="text-[#1a1a2e] font-medium">tycoworks</p>
           <p className="text-[#8a8a9a] text-sm">
             © {new Date().getFullYear()} tycoworks. All rights reserved.
