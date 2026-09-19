@@ -34,7 +34,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#fafafa]">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
-        <div className={`px-6 md:px-12 py-4 max-w-6xl mx-auto`}>
+        <div className="max-w-6xl mx-auto px-6 md:px-12 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <button onClick={() => scrollToSection('home')} className="focus:outline-none flex items-center gap-2">
@@ -142,8 +142,8 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="lg:min-h-[90vh] px-6 md:px-12 py-20 pt-32">
-        <div className={`flex flex-col lg:flex-row lg:items-center gap-12 lg:min-h-[70vh] max-w-6xl mx-auto`}>
+      <section id="home" className="lg:min-h-[90vh] py-20 pt-32">
+        <div className="flex flex-col lg:flex-row lg:items-center gap-12 lg:min-h-[70vh] max-w-6xl mx-auto px-6 md:px-12">
           <motion.div
             className="max-w-2xl flex-shrink-0"
             initial="initial"
@@ -197,8 +197,8 @@ export default function Home() {
       </section>
 
       {/* Who it's for */}
-      <section id="services" className="px-6 md:px-12 py-24 md:py-32 bg-white">
-        <div className="max-w-6xl mx-auto">
+      <section id="services" className="py-24 md:py-32 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -233,8 +233,8 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="px-6 md:px-12 py-24 md:py-32 bg-[#1a1a2e]">
-        <div className={`flex flex-col md:flex-row md:items-center gap-12 md:gap-16 max-w-6xl mx-auto`}>
+      <section id="about" className="py-24 md:py-32 bg-[#1a1a2e]">
+        <div className="flex flex-col md:flex-row md:items-center gap-12 md:gap-16 max-w-6xl mx-auto px-6 md:px-12">
           <motion.div
             className="max-w-3xl md:flex-1"
             initial={{ opacity: 0, y: 40 }}
@@ -301,8 +301,8 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="px-6 md:px-12 py-12 bg-[#fafafa] border-t border-[#e5e5e5]">
-        <div className={`flex flex-col md:flex-row justify-between items-center gap-4 max-w-6xl mx-auto`}>
+      <footer className="py-12 bg-[#fafafa] border-t border-[#e5e5e5]">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 max-w-6xl mx-auto px-6 md:px-12">
           <p className="text-[#1a1a2e] font-medium">tycoworks</p>
           <p className="text-[#8a8a9a] text-sm">
             © {new Date().getFullYear()} tycoworks. All rights reserved.
