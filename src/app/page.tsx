@@ -164,7 +164,7 @@ export default function Home() {
             </motion.h1>
 
             <motion.p className="text-lg md:text-xl text-[#4a4a5a] leading-relaxed mb-4" variants={fadeUp}>
-              tycoworks helps early-stage tech startups enable their sales teams. We help you ramp your reps on your product and market by:
+              tycoworks helps early-stage tech startups enable their sales teams. We help ramp your reps on your product and market by:
             </motion.p>
             <motion.ul className="text-lg md:text-xl text-[#4a4a5a] leading-relaxed mb-12 space-y-2 list-disc pl-6" variants={fadeUp}>
               <li>Building a product curriculum</li>
