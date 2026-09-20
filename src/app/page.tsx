@@ -169,7 +169,7 @@ export default function Home() {
             <motion.ul className="text-lg md:text-xl text-[#4a4a5a] leading-relaxed mb-12 space-y-2 list-disc pl-6" variants={fadeUp}>
               <li>Building a product curriculum</li>
               <li>Running live training and mock calls</li>
-              <li>Certifying each rep on the pitch before their first call</li>
+              <li>Certifying each rep on the pitch</li>
             </motion.ul>
 
             <motion.div variants={fadeUp}>
