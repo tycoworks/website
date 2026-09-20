@@ -67,7 +67,7 @@ export default function Home() {
                 About
               </button>
               <a
-                href="https://blog.tycoworks.com"
+                href="https://tycoworks.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#4a4a5a] hover:text-[#7c3aed] transition-colors"
@@ -122,7 +122,7 @@ export default function Home() {
                   About
                 </button>
                 <a
-                  href="https://blog.tycoworks.com"
+                  href="https://tycoworks.substack.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-left text-[#4a4a5a] hover:text-[#7c3aed] transition-colors py-2"
@@ -262,7 +262,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-[#a0a0b0] leading-relaxed">
               I've spent 18 years building and selling infrastructure software and developer tools at companies like Materialize, Genesis Global and Itiviti. At tycoworks, I help infrastructure and developer tool companies get their sales reps ramped and pitch certified. I also write about real-time infrastructure, AI-native development, and product marketing in my{' '}
               <a
-                href="https://blog.tycoworks.com"
+                href="https://tycoworks.substack.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#7c3aed] hover:underline underline-offset-4"
